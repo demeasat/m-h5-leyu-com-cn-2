@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://demeasat.github.io/m-h5-leyu-com-cn-2/sitemap.xml
