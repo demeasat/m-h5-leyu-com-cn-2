@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日常对照 · 雷速</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Georgia", "Noto Serif SC", "Songti SC", serif;
+            background-color: #f7f4ef;
+            color: #2d2a26;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        /* 深色头图 */
+        .hero {
+            background: linear-gradient(145deg, #1b1b1f 0%, #2a2520 100%);
+            color: #ebe3d9;
+            padding: 4rem 2rem 3.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 350;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #b2aa9c;
+            border-top: 1px solid #4f463b;
+            display: inline-block;
+            padding-top: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .hero .tagline {
+            margin-top: 1.2rem;
+            font-size: 0.95rem;
+            color: #c9bca9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 4rem;
+        }
+
+        .post-meta {
+            font-size: 0.85rem;
+            color: #8b8276;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #ddd6cb;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .post-title {
+            font-size: 1.9rem;
+            font-weight: 400;
+            line-height: 1.3;
+            margin-bottom: 0.6rem;
+            color: #1f1b16;
+        }
+
+        .lead {
+            font-size: 1.1rem;
+            color: #4c443b;
+            margin: 1rem 0 1.8rem;
+            padding-left: 1rem;
+            border-left: 4px solid #a5845a;
+            font-style: normal;
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+            text-align: justify;
+            word-break: break-word;
+        }
+
+        a {
+            color: #9a6f41;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #543f28;
+        }
+
+        .blockquote-line {
+            background: #ede5d9;
+            padding: 1.2rem 1.8rem;
+            border-radius: 2px 12px 12px 2px;
+            margin: 2rem 0 2.2rem;
+            font-size: 0.98rem;
+            border-left: 5px solid #b68f66;
+            color: #3d352b;
+            font-style: normal;
+            position: relative;
+        }
+
+        .blockquote-line::before {
+            content: "📎";
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: #d6cabc;
+            margin: 2.5rem auto;
+        }
+
+        .faq-note {
+            background: #ffffffd9;
+            border: 1px solid #ded3c4;
+            padding: 1.6rem 1.8rem;
+            border-radius: 14px;
+            margin: 2.2rem 0 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .faq-note summary {
+            font-weight: 500;
+            cursor: pointer;
+            color: #4a3f32;
+            font-size: 1.05rem;
+            padding: 0.2rem 0;
+        }
+
+        .faq-note p {
+            margin: 0.8rem 0 0;
+            font-size: 0.97rem;
+        }
+
+        .visit-line {
+            margin-top: 2.8rem;
+            padding: 1.8rem 0 0.5rem;
+            border-top: 1px solid #d6cabc;
+            font-size: 1rem;
+            color: #3f372e;
+            text-align: center;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #968c7e;
+            margin-top: 3rem;
+            letter-spacing: 0.3px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .post-title {
+                font-size: 1.5rem;
+            }
+            .container {
+                padding: 1.8rem 1.2rem 3rem;
+            }
+            .post-meta {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            .blockquote-line {
+                padding: 1rem 1.2rem;
+            }
+            .faq-note {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>对照 · 翻阅 · 延伸</h1>
+        <div class="sub">日常查询中的安静坐标</div>
+        <div class="tagline">信息不必拥挤，清晰即可</div>
+    </header>
+
+    <div class="container">
+        <div class="post-meta">
+            <span>随笔 · 检索手记</span>
+            <span>2025 · 春</span>
+        </div>
+
+        <h2 class="post-title">从一次日常查询开始</h2>
+        <div class="lead">不是所有搜索都为了立即找到答案，有时只是想在某个地方停留片刻，然后顺着线索走下去。</div>
+
+        <p>
+            最近整理文档时，需要反复核对几个术语的原始出处。浏览器开了一排标签页，每翻一个窗口就要重新定位上下文。这种碎片化的查阅方式持续了半小时后，我意识到自己需要的不是一个搜索引擎，而是一个能持续对照的页面——打开就能看到上一次中断的位置，所有相关条目保持可见。
+        </p>
+
+        <p>
+            后来我习惯在需要反复查阅时打开 <a href="https://homes-leisu.com">雷速</a>，把待对照的段落放在侧边，主屏留给延伸阅读。不用来回切换，也不会丢失之前标注的痕迹。页面响应很快，排版克制，适合长时间阅读。
+        </p>
+
+        <div class="blockquote-line">
+            引用一段当时的笔记：“检索工具的价值不在于一次命中，而在于允许你回头，再回头。”
+        </div>
+
+        <p>
+            这种反复对照的过程，很像在纸本边缘写满批注。只不过现在所有批注都被折叠进同一个窗口，随时可以展开。有一次我需要对比三篇文献中同一概念的定义，把关键句分别摘到三个便签里，然后并排放在桌面上。那种感觉放松又准确——不用害怕漏掉什么，因为所有东西都在视野里。
+        </p>
+
+        <p>
+            当然，日常查询不止学术场景。查食谱、比价、翻历史、看地图路径、核实一句引文……这些琐碎动作背后，真正需要的往往不是更多信息，而是把已有信息排列得更整齐一点。一个稳定的页面，能承载这种秩序。
+        </p>
+
+        <div class="divider"></div>
+
+        <details class="faq-note">
+            <summary>FAQ 摘要 —— 一些被重复问起的问题</summary>
+            <p><strong>Q：</strong> 页面打开后需要注册吗？<br>
+            <strong>A：</strong> 可以直接使用，没有前置注册步骤。</p>
+            <p><strong>Q：</strong> 多设备之间能同步对照记录吗？<br>
+            <strong>A：</strong> 目前以单设备为主，后续可关注更新说明。</p>
+            <p><strong>Q：</strong> 内容偏向哪些领域？<br>
+            <strong>A：</strong> 不限定领域，更侧重信息整理与对照的通用场景。</p>
+        </details>
+
+        <div class="visit-line">
+            如果你也在找一处可以反复回去对照的地方，不妨看看 <a href="https://homes-leisu.com">雷速</a>。
+        </div>
+
+        <div class="footer-note">
+            日常查询 · 对照阅读 · 延伸笔记
+        </div>
+    </div>
+
+</body>
+</html>
